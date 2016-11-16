@@ -4,7 +4,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sistem (<i>system</i>) dapat didefinisikan dengan pendekatan prosedur dan dengan pendekatan komponen. “Dengan pendekatan prosedur, sistem dapat didefinisikan sebagi kumpulan dari prosedur–prosedur yang mempunyai tujuan tertentu”.[5]<br> 
 <br>
 <strong>2.2	Pengertian Absensi</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menurut Erna Simona (2009). Absensi adalah suatu pendataan kehadiran, bagian dari pelaporan aktifitas suatu instansi, atau komponen institusi itu sendiri yang berisi data-data kehadiran yang disusun dan diatur sedemikian rupa sehingga mudah untuk dicari dan dipergunakan apabila sewaktu-waktu diperlukan oleh pihak yang berkepentingan.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absensi adalah suatu pendataan kehadiran, bagian dari pelaporan aktifitas suatu instansi, atau komponen institusi itu sendiri yang berisi data-data kehadiran yang disusun dan diatur sedemikian rupa sehingga mudah untuk dicari dan dipergunakan apabila sewaktu-waktu diperlukan oleh pihak yang berkepentingan.<br>
 Ada dua jenis absensi menurut cara penggunaannya, diantaranya yaitu:<br>
 a.	Absensi manual, adalah cara pengentrian kehadiran dengan cara menggunakan pena (tanda tangan).<br>
 b.	Absensi non manual (dengan menggunakan alat), adalah suatu cara pengentrian kehadiran dengan menggunakan sistem<br> terkomputerisasi. [6]<br>
@@ -14,8 +14,16 @@ b.	Absensi non manual (dengan menggunakan alat), adalah suatu cara pengentrian k
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adapun monitoring absensi menurut definisi di atas adalah aktivitas yang dilakukan pimpinan atau pihak terkait guna untuk melihat, memantau jalannya sebuah absensi perkuliahan mahasiswa dan meniliai ketercapainnya tujuan dan faktor penghambat pelaksanaan program kehadiran perkuliahan.[3]<br>
 <br>
 <strong>2.4	Program Studi DIV Teknik Informatika Politeknik Pos Indonesia</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Politeknik Pos Indonesia adalah sebuah kampus yang terletak di Jl. Sari Asih No. 54 Bandung. Kampus tersebut kini telah memiliki 9 program studi, salah satu di antaranya adalah DIV Teknik Informatika. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DIV Teknik Informatika adalah sebuah program studi yang merupakan diploma IV (setara dengan S1) yang sasarannya yaitu menghasilkan generasi yang siap dalam kerja nyata di perusahaan-perusahaan atau instansi lainnya yang di dalamnya lebih ditekankan kepada praktek. Kini pada tahun 2016, jumlah mahasiswa DIV Teknik Informatika Politeknik Pos Indonesia mencapai kurang lebih 400 mahasiswa dengan rincian 3 kelas dari tingkat I, 4 kelas dari tingkat II, 4 kelas dari tingkat III, dan 2 kelas dari tingkat IV.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Politeknik Pos Indonesia adalah sebuah kampus yang terletak di Jl. Sari Asih No. 54 Bandung. Kampus tersebut kini telah memiliki 9 program studi, salah satu di antaranya adalah DIV Teknik Informatika. 
+DIV Teknik Informatika adalah sebuah program studi yang merupakan diploma IV (setara dengan S1) yang memiliki visi dan misi sebagai berikut:<br>
+Visi: <br>
+Unggul di bidang teknologi informasi yang mendukung manajemen  logistik, postal dan rantai pasok. <br>
+Misi: <br>
+1. menyelenggarakan pendidikan untuk meningkatkan dan menghasilkan tenaga professional di bidang tik yang memiliki kemampuan operasional, manajerial dan inovatif untuk mendukung layanan tik pada manajemen logistik dan rantai pasok.<br>
+2. melaksanakan penelitian untuk menciptakan, mengembangkan dan menerapkan ilmu pengetahuan dan tik yang relevan dengan peningkatan layanan tik di industri logistik khususnya dan industri-industri lain pada umumnya.<br>
+3. melaksanakan pengabdian masyarakat untuk memenuhi kebutuhan industrialisasi dan meningkatkan kesejahteraan masyarakat dengan pembekalan ilmu pengetahuan dan teknologi. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada tahun 2015, tercatat jumlah mahasiswa DIV Teknik Informatika Politeknik Pos Indonesia mencapai 343 mahasiswa dengan rincian 4 kelas dari tingkat I, 4 kelas dari tingkat II, 2 kelas dari tingkat III, dan 2 kelas dari tingkat IV. Namun pada tahun 2016, mahasiswa Diploma IV Teknik Informatika ini bertambah menjadi kurang lebih 400 mahasiswa. Sedangkan jumlah dosen pada program studi tersebut mencapai 11 orang sehingga rasio antara dosen dan mahasiswa yaitu 1:31,2. [3]
+<br>
 <br>
 <strong>2.5	<i>CodeIgniter</i></strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>CodeIgniter</i> merupakan aplikasi sumber terbuka yang berupa <i>framework PHP</i> dengan model <i>MVC(Model, View, Controller)</i> untuk membangun <i>website</i> dinamis dengan menggunakan PHP.  <i>Codeigniter</i> memudahkan <i>developer</i> untuk membuat aplikasi web dengan cepat mudah dibandingkan dengan membuatnya dari awal.[2] <br>
@@ -59,25 +67,10 @@ Secara umum, SQL terdiri dari dua bahasa, yaitu <i>Data Definition Language (DDL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menggambarkan semua state (kondisi) yang dimiliki oleh suatu object dari suatu class dan keadaan yang menyebabkan state berubah. Kejadian dapat berupa object lain yang mengirim pesan. [12] <br>
 <br>
 <strong>2.11	Metodologi Penelitian</strong> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metode yang digunakan untuk pengembangan software Sistem Pemesanan Pakaian Custom adalah model <i>Waterfall</i> (Air Terjun).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk pengembangan software Sistem Pengelolaan Data dan Monitoring Absensi Mahasiswa mengacu ke sistem absensi yang sedang berjalan sekarang di Politeknik Pos Indonesia dimana sistem absensi tersebut hanya bisa menginputkan absensi saja, belum dilengkapi fitur-fitur yang lainnya. Atas patokan tersebut maka akan dibuatlah sebuah sistem absensi yang cangkupannya hanya untuk mahasiswa Program Studi Diploma IV Teknik Informatika Politeknik Pos Indonesia, yang memiliki kelebihan sebagai berikut:<br>
+1.	Absensi dapat dimonitoring oleh orang tua. Maksudnya yaitu orang tua bisa mengetahui dan mengontrol apabila anaknya tidak hadir dalam perkuliahan baik melalui website ataupun pemberitahuan sp melalui sms.<br>
+2.	Disajikannya absensi melalui grafik sehingga memudahkan pengguna dalam melihat persentase absensi.<br>
+3.	Mahasiswa bisa mengecek kehadirannya dalam sistem.<br>
 <br>
-<strong>2.11.1 Definisi Model <i>Waterfall</i><br></strong>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Model Waterfall adalah Model klasik yang bersifat sistematis, berurut anda dalam membangun <i>software</i>.<br> 
--	Tahap pengembangan Model Waterfall menurut Pressman:<br>
-<p align="center"><img src="../../img/Laporan/waterfall.JPG" width="400" height="200">
-</p><br>
-Gambar 2.1 Tahap pengembangan Model Waterfall menurut Pressman<br>
-<br>
--	Tahap pengembangan menurut Sommerville<br>
-•	<i>Requirements analysis and definition</i>: Mengumpulkan kebutuhan secara lengkap kemudian dianalisis dan didefinisikankebutuhan yang harus dipenuhi oleh program yang akan dibangun. Fase ini harus dikerjakan secara lengkap untuk bisa menghasilkan desain yang lengkap.<br>
-•	<i>System and software design</i>: Desain dikerjakan setelah kebutuhan selesai dikumpulkan secara lengkap.<br>
-•	<i>Implementation and unit testing</i>: desain program diterjemahkan ke dalam kode-kode dengan menggunakan bahasa pemrograman yang sudah ditentukan. Program yang dibangun langsung diuji baik secara unit.<br>
-•	<i>Integration and system testing</i>: Penyatuan unit-unit program kemudian diuji secara keseluruhan (system testing).<br>
-•	<i>Operation and maintenance</i>: mengoperasikan program di lingkungannya dan melakukan pemeliharaan, seperti penyesuaian atau perubahan karena adaptasi dengan situasi sebenarnya.[8]<br>
-
-<strong>2.11.2 Permasalahan model waterfall</strong><br>
-•	Perubahan sulit dilakukan karena sifatnya yang kaku.<br>
-•	Karena sifat kakunya, model ini cocok ketika kebutuhan dikumpulkan secara lengkap sehingga perubahan bias ditekan sekecil mungkin. Tapi pada kenyataannya jarang sekali konsumen/pengguna yang bisa memberikan kebutuhan secara lengkap, perubahan kebutuhan adalah sesuatu yang wajar terjadi.<br>
-•	Waterfall pada umumnya digunakan untuk rekayasa sistem yang besar dimana proyek dikerjakan di beberapa tempat berbeda, dan dibagi menjadi beberapa bagian sub-proyek.[8]<br>
 
 </p>
