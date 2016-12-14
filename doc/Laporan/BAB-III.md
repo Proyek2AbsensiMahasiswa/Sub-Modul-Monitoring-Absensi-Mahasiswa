@@ -18,7 +18,7 @@ Keterangan:<br>
 <p align="center"><img src="../../img/Laporan/Result%20informasi%20yang%20sedang%20berjalan.png" width="500" height="800">
 <br> 
 Gambar 3.2 Result BPMN Absensi Mahasiswa Secara Manual <br></p>
-<br>
+<br><p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adapun dalam hal pemberitahuan kehadiran mahasiswa atau monitoring absensi mahasiswa pada proses yang sedang berjalan di Program Studi Diploma IV Teknik Informatika Politeknik Pos Indonesia saat ini tidak sampai secara langsung kepada orang tua. Pemberitahuan kehadiran hanya sampai pada mahasiswanya sendiri yang diberitahukan pada saat perwalian dengan dosen.<br>
 <br>
 <b>3.1.1.2  Analisis Dokumen yang Digunakan</b><br>
@@ -93,7 +93,7 @@ Ditujukan untuk	:	Admin, Mahasiswa/ortu, dosen<br>
 Isi	            :	Pelanggaran id, jenis pelanggaran, point<br>
 Tujuan	        :	Untuk menentukan mahasiswa mendapatkan pelanggaran seperti SP1,SP2,SP3 atau dropout<br>
 Frekuensi	    :	Fleksibel<br>
-<br>
+<br></p>
 <b>3.1.2  Analisis Sistem yang akan Dibangun</b><br>
 <b>3.1.2.1  Analisis Prosedur yang akan dibangun</b><br>
 <p align="center"><img src="../../img/Laporan/bpmn%20dibangun%20sms.JPG" width="800" height="500">
@@ -103,8 +103,8 @@ Gambar 3.3 BPMN Monitoring Absensi Mahasiswa via sms<br></p>
 <p align="center"><img src="../../img/Laporan/bpmn%20login.JPG" width="400" height="200">
 <br> 
 Gambar 3.4 BPMN Sub Proses Login<br></p>
-Keterangan:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada model gambar 3.3, salah satu proses tersebut memeliki sub proses yaitu login, yang dijelaskan pada gambar 3.4. Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 50 menit untuk melakukan monitoring absensi mahasiswa via sms, dari mulai penginputan absensi oleh dosen sampai orang tua menerima info pelanggaran melalui sms atau tidak mendapatkan sms info pelanggaran. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450, yaitu 158 yang tidak menerima sms info pelanggaran, dan 292 menerima sms info pelanggaran dengan list 147 mendapat SP1, 72 mendapat SP2 dan 73 mendapat SP3. Oleh karena itu, simulasi dari model monitoring absensi mahasiswa via sms di atas telah valid. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br>
+Keterangan:<br><p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada model gambar 3.3, salah satu proses tersebut memeliki sub proses yaitu login, yang dijelaskan pada gambar 3.4. Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 50 menit untuk melakukan monitoring absensi mahasiswa via sms, dari mulai penginputan absensi oleh dosen sampai orang tua menerima info pelanggaran melalui sms atau tidak mendapatkan sms info pelanggaran. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450, yaitu 158 yang tidak menerima sms info pelanggaran, dan 292 menerima sms info pelanggaran dengan list 147 mendapat SP1, 72 mendapat SP2 dan 73 mendapat SP3. Oleh karena itu, simulasi dari model monitoring absensi mahasiswa via sms di atas telah valid. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br></p>
 <p align="center"><img src="../../img/Laporan/result%20sms.JPG" width="500" height="800">
 <br> 
 Gambar 3.5 Result BPMN Monitoring Absensi Mahasiswa via sms<br>
@@ -112,19 +112,19 @@ Gambar 3.5 Result BPMN Monitoring Absensi Mahasiswa via sms<br>
 <br> 
 Gambar 3.6 BPMN Monitoring Absensi Mahasiswa via web<br></p>
 
-Keterangan:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 50 menit untuk melakukan aktifitas absensi secara manual, dari mulai login oleh mahasiswa atau orangtua sampai display abesensi mahasiswa. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450. Oleh karena itu, simulasi dari model absensi secara manual di atas telah valid. Pada simulasi tersebut dijelaskan bahwa semua task dan start/end even dari mulai mulai login oleh mahasiswa atau orangtua sampai display abesensi mahasiswa berinstance complete 450, kecuali input npm dan password, kelola login dan gateway dimana proses tersebut akan terus berulang sampai npm dan password yang diinputkan dinyatakan valid oleh sistem, sehingga nilai instance complete yang didapat akan lebih dari 450 yaitu bernilai 880. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br>
+Keterangan:<br><p align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 50 menit untuk melakukan aktifitas absensi secara manual, dari mulai login oleh mahasiswa atau orangtua sampai display abesensi mahasiswa. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450. Oleh karena itu, simulasi dari model absensi secara manual di atas telah valid. Pada simulasi tersebut dijelaskan bahwa semua task dan start/end even dari mulai mulai login oleh mahasiswa atau orangtua sampai display abesensi mahasiswa berinstance complete 450, kecuali input npm dan password, kelola login dan gateway dimana proses tersebut akan terus berulang sampai npm dan password yang diinputkan dinyatakan valid oleh sistem, sehingga nilai instance complete yang didapat akan lebih dari 450 yaitu bernilai 880. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br></p>
 <p align="center"><img src="../../img/Laporan/result%20web.JPG" width="600" height="700">
 <br> 
 Gambar 3.7 Result BPMN Monitoring Absensi Mahasiswa via web<br></p>
 <br>
-<b>3.1.2.2  Analisis Kebutuhan Aplikasi</b><br>
+<b>3.1.2.2  Analisis Kebutuhan Aplikasi</b><br><p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kebutuhan fungsional dari sistem monitoring absensi mahasiswa adalah sebagai berikut:<br>
 1.	Proses Monitoring Absensi Mahasiswa via sms<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada proses absensi yang berjalan sekarang di Program Studi D4 Teknik Informatika Politeknik Pos Indonesia belum terbuka untuk orangtua. Jika mahasiswa mendapatkan pelanggaran, pemberitahuannya hanya sampai kepada mahasiswa sendiri melalui dosen. Jadi, orang tau tidak tahu apabila anaknya betul betul hadir dalam perkuliahan atau sebaliknya.<br>
 Untuk itu, proses monitoring absensi mahasiswa sangatlah penting, guna untuk mengontrol kehadiran mahasiswa. Adapun salah satu cara untuk memonitoringnya yaitu melalui sms. Jadi sistem akan mengirikan sms kepada orangtua apabila anaknya mendapatkan pelanggaran terkait absensi perkuliahan yaitu berupa SP1, SP2, SP3 atau dropout. Adapun yang menerima sms ini hanya orang tua mahasiswa, yang dikirimkan oleh admin atau BAAK melalui sistem.<br>
 2.	Proses View Absensi Mahasiswa<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada proses absensi yang sedang berjalan saat ini di Prodi D4 Tenik Infomatika Politeknik Pos Indonesia, mahasiswa tidak bisa melihat absensi dirinya sendiri di web. Apabila mahasiswa ingin melihat absensinya, beliau harus datang ke prodi atau BAAK untuk melihat absensinya. Oleh karena itu, dengan sistem yang akan dibuat nanti, mahasiswa bisa melihat absensinya dengan memasukan username dan password (login) di web absensi nanti. Adapun yang dapat melihat absensi ini semua jenis user bisa melihatnya seperti BAAK, dosen, orangtua atau mahasiswa.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada proses absensi yang sedang berjalan saat ini di Prodi D4 Tenik Infomatika Politeknik Pos Indonesia, mahasiswa tidak bisa melihat absensi dirinya sendiri di web. Apabila mahasiswa ingin melihat absensinya, beliau harus datang ke prodi atau BAAK untuk melihat absensinya. Oleh karena itu, dengan sistem yang akan dibuat nanti, mahasiswa bisa melihat absensinya dengan memasukan username dan password (login) di web absensi nanti. Adapun yang dapat melihat absensi ini semua jenis user bisa melihatnya seperti BAAK, dosen, orangtua atau mahasiswa.<br></p>
 <br>
 <b>2.1.2.3	Analisis Kebutuhan Perangkat Lunak dan Perangkat Keras</b><br>
 1)	Perangkat Lunak yang digunakan untuk membuat aplikasi ini meliputi:<br>
