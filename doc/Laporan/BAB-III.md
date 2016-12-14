@@ -107,8 +107,8 @@ Keterangan:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada model gambar 3.3, salah satu proses tersebut memeliki sub proses yaitu login, yang dijelaskan pada gambar 3.4. Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 50 menit untuk melakukan monitoring absensi mahasiswa via sms, dari mulai penginputan absensi oleh dosen sampai orang tua menerima info pelanggaran melalui sms atau tidak mendapatkan sms info pelanggaran. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450, yaitu 158 yang tidak menerima sms info pelanggaran, dan 292 menerima sms info pelanggaran dengan list 147 mendapat SP1, 72 mendapat SP2 dan 73 mendapat SP3. Oleh karena itu, simulasi dari model monitoring absensi mahasiswa via sms di atas telah valid. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br>
 <p align="center"><img src="../../img/Laporan/result%20sms.JPG" width="500" height="800">
 <br> 
-Gambar 3.5 Result BPMN Monitoring Absensi Mahasiswa via sms<br></p>
-<p align="center"><img src="../../img/Laporan/bpmn%20dibangun%20web.JPG" width="800" height="500">
+Gambar 3.5 Result BPMN Monitoring Absensi Mahasiswa via sms<br>
+<img src="../../img/Laporan/bpmn%20dibangun%20web.JPG" width="800" height="500">
 <br> 
 Gambar 3.6 BPMN Monitoring Absensi Mahasiswa via web<br></p>
 
