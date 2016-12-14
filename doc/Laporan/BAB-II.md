@@ -66,7 +66,7 @@ Secara umum, SQL terdiri dari dua bahasa, yaitu <i>Data Definition Language (DDL
 8.	<i>State Diagram</i> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Menggambarkan semua state (kondisi) yang dimiliki oleh suatu object dari suatu class dan keadaan yang menyebabkan state berubah. Kejadian dapat berupa object lain yang mengirim pesan. [12] <br>
 <br>
-<strong>2.11	Metodologi Penelitian</strong> <br>
+<strong>2.11	Pengembangan Aplikasi</strong> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk pengembangan software Sistem Pengelolaan Data dan Monitoring Absensi Mahasiswa mengacu ke sistem absensi yang sedang berjalan sekarang di Politeknik Pos Indonesia dimana sistem absensi tersebut hanya bisa menginputkan absensi saja, belum dilengkapi fitur-fitur yang lainnya. Atas patokan tersebut maka akan dibuatlah sebuah sistem absensi yang cangkupannya hanya untuk mahasiswa Program Studi Diploma IV Teknik Informatika Politeknik Pos Indonesia, yang memiliki kelebihan sebagai berikut:<br>
 1.	Absensi dapat dimonitoring oleh orang tua. Maksudnya yaitu orang tua bisa mengetahui dan mengontrol apabila anaknya tidak hadir dalam perkuliahan baik melalui website ataupun pemberitahuan sp melalui sms.<br>
 2.	Disajikannya absensi melalui grafik sehingga memudahkan pengguna dalam melihat persentase absensi.<br>
