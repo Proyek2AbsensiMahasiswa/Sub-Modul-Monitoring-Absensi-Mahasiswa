@@ -11,13 +11,13 @@ ANALISIS DAN PERANCANGAN</h2>
 <br>
 <b>3.1.1.1  Analisis Prosedur Berjalan</b><br>
 <p align="center"><img src="../../img/Laporan/bpmn%20sedang%20berjalan.jpg" width="800" height="500">
-</p><br><br>
-Gambar 3.1 BPMN Absensi Mahasiswa Secara Manual <br>
+<br>
+Gambar 3.1 BPMN Absensi Mahasiswa Secara Manual <br></p>
 Keterangan:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 2 jam 30 menit 6 detik untuk melakukan aktifitas absensi secara manual, dari mulai penginputan absensi oleh dosen sampai menjadi laporan absensi mahasiswa. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450. Oleh karena itu, simulasi dari model absensi secara manual di atas telah valid. Pada simulasi tersebut dijelaskan bahwa semua task dan start/end even dari mulai menginputkan absensi sampai mengkalkulasikan absensi mahasiswa yang memuat laporan absensi berinstance complete 450, kecuali estafet absensi mahasiswa, proses pengecekan absensi dan gateway dimana proses tersebut akan terus berulang sampai kertas absensi mahasiswa terisi penuh, sehingga nilai instance complete yang didapat akan lebih dari 450 yaitu bernilai 902. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br>
 <p align="center"><img src="../../img/Laporan/Result%20informasi%20yang%20sedang%20berjalan.png" width="500" height="800">
-</p><br> 
-Gambar 3.2 Result BPMN Absensi Mahasiswa Secara Manual <br>
+<br> 
+Gambar 3.2 Result BPMN Absensi Mahasiswa Secara Manual <br></p>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adapun dalam hal pemberitahuan kehadiran mahasiswa atau monitoring absensi mahasiswa pada proses yang sedang berjalan di Program Studi Diploma IV Teknik Informatika Politeknik Pos Indonesia saat ini tidak sampai secara langsung kepada orang tua. Pemberitahuan kehadiran hanya sampai pada mahasiswanya sendiri yang diberitahukan pada saat perwalian dengan dosen.<br>
 <br>
@@ -97,8 +97,8 @@ Frekuensi	    :	Fleksibel<br>
 <b>3.1.2  Analisis Sistem yang akan Dibangun</b><br>
 <b>3.1.2.1  Analisis Prosedur yang akan dibangun</b><br>
 <p align="center"><img src="../../img/Laporan/bpmn%20dibangun%20sms.JPG" width="800" height="500">
-</p><br>
-Gambar 3.3 BPMN Monitoring Absensi Mahasiswa via sms<br>
+<br>
+Gambar 3.3 BPMN Monitoring Absensi Mahasiswa via sms<br></p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adapun sub proses dari proses login pada BPMN Monitoring Absensi Mahasiswa via sms adalah sebagai berikut:<br>
 <p align="center"><img src="../../img/Laporan/bpmn%20login.JPG" width="400" height="200">
 </p><br> 
@@ -106,8 +106,8 @@ Gambar 3.4 BPMN Sub Proses Login<br>
 Keterangan:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada model gambar 3.3, salah satu proses tersebut memeliki sub proses yaitu login, yang dijelaskan pada gambar 3.4. Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 50 menit untuk melakukan monitoring absensi mahasiswa via sms, dari mulai penginputan absensi oleh dosen sampai orang tua menerima info pelanggaran melalui sms atau tidak mendapatkan sms info pelanggaran. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450, yaitu 158 yang tidak menerima sms info pelanggaran, dan 292 menerima sms info pelanggaran dengan list 147 mendapat SP1, 72 mendapat SP2 dan 73 mendapat SP3. Oleh karena itu, simulasi dari model monitoring absensi mahasiswa via sms di atas telah valid. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br>
 <p align="center"><img src="../../img/Laporan/result%20sms.JPG" width="500" height="800">
-</p><br> 
-Gambar 3.5 Result BPMN Monitoring Absensi Mahasiswa via sms<br>
+<br> 
+Gambar 3.5 Result BPMN Monitoring Absensi Mahasiswa via sms<br></p>
 <p align="center"><img src="../../img/Laporan/bpmn%20dibangun%20web.JPG" width="800" height="500">
 </p><br> 
 Gambar 3.6 BPMN Monitoring Absensi Mahasiswa via web<br>
@@ -115,8 +115,8 @@ Gambar 3.6 BPMN Monitoring Absensi Mahasiswa via web<br>
 Keterangan:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk menguji model di atas, maka hal yang harus dilakukan yaitu memvalidasi simulasi yang diberikan durations 50 menit untuk melakukan aktifitas absensi secara manual, dari mulai login oleh mahasiswa atau orangtua sampai display abesensi mahasiswa. Di model tersebut digambarkan bahwa jika simulasi dimulai 450, maka output yang dihasilkan juga harus sama yaitu 450. Oleh karena itu, simulasi dari model absensi secara manual di atas telah valid. Pada simulasi tersebut dijelaskan bahwa semua task dan start/end even dari mulai mulai login oleh mahasiswa atau orangtua sampai display abesensi mahasiswa berinstance complete 450, kecuali input npm dan password, kelola login dan gateway dimana proses tersebut akan terus berulang sampai npm dan password yang diinputkan dinyatakan valid oleh sistem, sehingga nilai instance complete yang didapat akan lebih dari 450 yaitu bernilai 880. Adapun hasil simulasi tersebut (result) adalah sebagai berikut:<br>
 <p align="center"><img src="../../img/Laporan/result%20web.JPG" width="500" height="800">
-</p><br> 
-Gambar 3.7 Result BPMN Monitoring Absensi Mahasiswa via web<br>
+<br> 
+Gambar 3.7 Result BPMN Monitoring Absensi Mahasiswa via web<br></p>
 <br>
 <b>3.1.2.2  Analisis Kebutuhan Aplikasi</b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kebutuhan fungsional dari sistem monitoring absensi mahasiswa adalah sebagai berikut:<br>
