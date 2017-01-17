@@ -145,4 +145,405 @@ b.	untuk User  meliputi:<br>
 1)	Processor Intel Dual Core<br>
 2)	Memory  1 GB.<br>
 3)	Harddisk 300 GB.<br>
+
+
+2.2	Perancangan
+Perancangan merupakan tahapan analisis untuk mendefinisikan kebutuhan-kebutuhan fungsional yang menggambarkan bagaimana suatu aplikasi dibentuk. 
+Perancangan dapat berupa penggambaran, perencanaan, dan pembuatan sketsa atau pengaturan dari beberapa elemen yang terpisah ke dalam satu kesatuan yang utuh dan mempunyai fungsi tersendiri, termasuk menyangkut konfigurasi dari komponen-komponen perangkat lunak, dan keras suatu aplikasi. 
+Perancangan ini menitik beratkan kepada perancangan data yang ada pada aplikasi, tahap perancangan data pada perangkat lunak tersebut dipakai ke dalam permodelan yang umum yang digunakan yaitu menggunakan Use Case Diagram, Class Diagram, Sequence Diagram, Communication Diagram, Activity Diagram, Statechart Diagram, Component Diagram, Deployment Diagram,  Struktur Menu dan Perancangan Antarmuka.
+
+3.2.1   Use Case Diagram
+Adapun use case diagram dari sistem monitoring absensi mahasiswa adalah sebagai berikut:
+<p align="center"><img src="../../img/Laporan/UML/use%2520case/UseCaseDiagram.png" width="500" height="800"> 
+Gambar 3.8  Use Case Diagram Sistem Monitoring Absensi Mahasiswa
+
+| No | Aktor     | Keterangan                                                                                                                                                                                                                                                                                         |
+|----|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | Admin     | Melakukan *login*, pengelolaan data master untuk absensi meliputi data admin, data dosen, data matakuliah, data kelas, data mahasiswa, pengelolaan jadwal, pengelolaan absensi, dan terkhusus bagi sub modul monitoring absensi mahasiswa ini yaitu pengelolaan monitoring absensi via sms dan web |
+| 2  | Dosen     | Dosen Melakukan *login*, mengelola data absensi                                                                                                                                                                                                                                                    |
+| 3  | Orangtua  | Melakukan login, monitoring absensi via sms (penerimaan sms) dan melihat absensi via web                                                                                                                                                                                                           |
+| 4  | Mahasiswa | Melakukan login, melihat absensi via web                                                                                                                                                                                                                                                           |
+
+Tabel 3.12 Definisi *Use Case*
+
+| No. | Aktor                             | Keterangan                                                       |
+|-----|-----------------------------------|------------------------------------------------------------------|
+| 1   | *Login*                           | Melakukan proses *login*                                         |
+| 2   | Kelola Absensi                    | Melakukan pengelolaan data dosen                                 |
+| 3   | Kelola Rekap Absensi              | Melakukan pengelolaan data kurikulum                             |
+| 4   | Kelola Monitoring Absensi via sms | Melakukan Pengelolaan data ruangan                               |
+| 5   | Kelola Monitoring Absensi via web | Melakukan *backup* dan *restore* data                            |
+| 6   | Penerimaan SMS                    | Menerima pemberitahuan terkait absensi mahasiswa kepada orangtua |
+| 7   | Display Absensi                   | Melihat absensi mahasiswa                                        |
+
+Tabel 3.13 Skenario *Use Case Login*
+
+| **Identifikasi**                                    |                                                                                                                            |
+|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Nomor                                               | 1                                                                                                                          |
+| Nama                                                | *LOGIN*                                                                                                                    |
+| Tujuan                                              | Melakukan *login* untuk masuk halaman utama                                                                                |
+| Deskripsi                                           | *Login* dengan memasukan *Username* dan *Password*                                                                         |
+| Aktor                                               | Admin (BAAK), Dosen, Mahasiswa, Orangtua                                                                                   |
+| **Skenario**                                        |                                                                                                                            |
+| Kondisi Awal                                        | Menampilkan *form login*                                                                                                   |
+| **Aksi Aktor**                                      | **Reaksi Sistem**                                                                                                          |
+| 1.    Aktor meminta fasilitas *login* kepada sistem | 2.     Menampilkan *form login*                                                                                            |
+| 3. Memasukan *Username* dan *Password*              | 4. Melakukan proses *valid*asi jika salah keduanya muncul pesan “*Username* dan *Password* yang anda masukan tidak cocok”. |
+|                                                     |                                                                                                                            |
+|                                                     | 5. Jika masih salah, kembali ke *form login*.                                                                              |
+|                                                     | 6. Jika benar maka akan ditampilkan *form* halaman utama.                                                                  |
+| Kondisi Akhir                                       | Menampilkan *form* halaman utama                                                                                           |
+
+Tabel 3.14 Skenario *Use Case* Kelola Absensi
+
+| **Identifikasi**                                                                                                                         |                                                                                                                                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nomor                                                                                                                                    | 2                                                                                                                                                                       |
+| Nama                                                                                                                                     | KELOLA\_ABSENSI                                                                                                                                                         |
+| Tujuan                                                                                                                                   | Melakukan pengelolaan absensi                                                                                                                                           |
+| Deskripsi                                                                                                                                | Melakukan pengelolaan absensi mahasiswa yang diambil dari data master absensi mahasiswa seperti data mahasiswa, data dosen, matakuliah, kelas, prodi, data jadwal. dll. |
+| Aktor                                                                                                                                    | Admin dan Dosen                                                                                                                                                         |
+| **Skenario**                                                                                                                             |                                                                                                                                                                         |
+| Kondisi Awal                                                                                                                             | Menampilkan *form* kelola absensi                                                                                                                                       |
+| **Aksi Aktor**                                                                                                                           | **Reaksi Sistem**                                                                                                                                                       |
+| Memulai Aplikasi                                                                                                                         | Menampilkan *form* kelola absensi                                                                                                                                       |
+| 1. Pilih menu kelola absensi mahasiswa                                                                                                   | 2. Menampilkan halaman kelola absensi mahasiswa                                                                                                                         |
+| Aktor memilih fasilitas pengelolaan absensi mahasiswa yaitu tambah absensi, edit data absensi, delete data absensi dan view data absensi | Sistem ke halaman yang diminta sesuai dengan fasilitas yang dilakukan                                                                                                   |
+| Aktor memilih fasilitas tambah data                                                                                                      | Sistem memunculkan *data grid view* sesuai dengan yang telah diinputkan aktor                                                                                           |
+
+Tabel 3.15 Skenario *Use Case* Kelola Rekap Absensi
+
+| **Identifikasi**                                                                                                                                             |                                                                               |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| Nomor                                                                                                                                                        | 3                                                                             |
+| Nama                                                                                                                                                         | KELOLA\_REKAP\_ABSENSI                                                        |
+| Tujuan                                                                                                                                                       | Melakukan pengelolaan rekap absensi                                           |
+| Deskripsi                                                                                                                                                    | Melakukan pengelolaan rekap absensi mahasiswa yang diambil dari data absensi  |
+| Aktor                                                                                                                                                        | Admin                                                                         |
+| **Skenario**                                                                                                                                                 |                                                                               |
+| Kondisi Awal                                                                                                                                                 | Menampilkan *form* kelola rekap absensi                                       |
+| **Aksi Aktor**                                                                                                                                               | **Reaksi Sistem**                                                             |
+| Memulai Aplikasi                                                                                                                                             | Menampilkan *form* kelola absensi rekap                                       |
+| 1. Pilih menu kelola rekap absensi mahasiswa                                                                                                                 | 2. Menampilkan halaman kelola rekap absensi mahasiswa                         |
+| Aktor memilih fasilitas pengelolaan rekap absensi mahasiswa yaitu tambah rekap absensi, edit rekap absensi, delete rekap absensi dan view data rekap absensi | Sistem ke halaman yang diminta sesuai dengan fasilitas yang dilakukan         |
+| Aktor memilih fasilitas tambah data                                                                                                                          | Sistem memunculkan *data grid view* sesuai dengan yang telah diinputkan aktor |
+
+Tabel 3.16 Skenario *Use Case* Monitoring Absensi via sms
+
+| **Identifikasi**                                                                                            |                                                                                                     |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Nomor                                                                                                       | 4                                                                                                   |
+| Nama                                                                                                        | MONITORING ABSENSI VIA SMS                                                                          |
+| Tujuan                                                                                                      | Melakukan pengelolaan monitoring absensi via sms                                                    |
+| Deskripsi                                                                                                   | Melakukan monitoring absensi mahasiswa via sms dengan mengirimkan sms pemberitahuan SP ke orang tua |
+| Aktor                                                                                                       | Admin                                                                                               |
+| **Skenario**                                                                                                |                                                                                                     |
+| Kondisi Awal                                                                                                | Menampilkan *form* kirim sms                                                                        |
+| **Aksi Aktor**                                                                                              | **Reaksi Sistem**                                                                                   |
+| Memulai Aplikasi                                                                                            | Menampilkan *form* kirim sms                                                                        |
+| Pilih menu kirim sms                                                                                        | Menampilkan halaman kelola kirim sms                                                                |
+| Aktor memilih fasilitas atau fitur monitoring absensi via sms seprti data phonebook, dan kirim sms (tambah) | Sistem ke halaman yang diminta sesuai dengan fasilitas yang dilakukan                               |
+| Aktor memilih mengetikan informasi tentang absensi ke orang tua                                             | Mengirimkan sms pemberitahuan SP ke orang tua                                                       |
+
+Tabel 3.17 Skenario *Use Case* Monitoring Absensi via web
+
+| **Identifikasi**                                                                        |                                                                                          |
+|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Nomor                                                                                   | 5                                                                                        |
+| Nama                                                                                    | MONITORING ABSENSI VIA WEB                                                               |
+| Tujuan                                                                                  | Melakukan pengelolaan monitoring absensi via web                                         |
+| Deskripsi                                                                               | Melakukan monitoring absensi mahasiswa via web dengan menampilkan absensi di halaman web |
+| Aktor                                                                                   | Admin                                                                                    |
+| **Skenario**                                                                            |                                                                                          |
+| Kondisi Awal                                                                            | Menampilkan *form* display absensi                                                       |
+| **Aksi Aktor**                                                                          | **Reaksi Sistem**                                                                        |
+| Memulai Aplikasi                                                                        | Menampilkan *form* display absensi                                                       |
+| 1. Pilih menu abensi                                                                    | 2. Menampilkan halaman kelola absensi                                                    |
+| 3. Aktor memilih fasilitas atau fitur monitoring absensi via web view absensi mahasiswa | 4. Sistem ke halaman yang diminta sesuai dengan fasilitas yang dilakukan                 |
+
+Tabel 3.18 Skenario *Use Case* Penerimaan SMS
+
+| **Identifikasi**                                |                                                                  |
+|-------------------------------------------------|------------------------------------------------------------------|
+| Nomor                                           | 8                                                                |
+| Nama                                            | PENERIMAAN SMS                                                   |
+| Tujuan                                          | Mengontrol mahasiswa terkait absensi                             |
+| Deskripsi                                       | Orangtua menerima sms pemberitahuan SP terkait kehadiran anaknya |
+| Aktor                                           | Orangtua                                                         |
+| **Skenario**                                    |                                                                  |
+| Kondisi Awal                                    | Akumulasi kehadiran                                              |
+| **Aksi Aktor**                                  | **Reaksi Sistem**                                                |
+| Admin mengirimkan pemberitahuan terkait absensi | Sms *sending* kepada orangtua mahasiswa                          |
+| Menerima sms                                    | Sms *delivered*                                                  |
+
+Tabel 3.19 Skenario *Use Case Display* Absensi Mahasiswa
+
+| **Identifikasi**                     |                                                                                            |
+|--------------------------------------|--------------------------------------------------------------------------------------------|
+| Nomor                                | 8                                                                                          |
+| Nama                                 | DISPLAY ABSENSI                                                                            |
+| Tujuan                               | Melihat absensi mahasiswa via web                                                          |
+| Deskripsi                            | Melihat absensi mahasiswa via web yang sebelumnya telah diinputkan oleh yang bersangkutan. |
+| Aktor                                | Mahasiswa dan Orangtua                                                                     |
+| **Skenario**                         |                                                                                            |
+| Kondisi Awal                         | Menampilkan *form* absensi mahasiswa via web                                               |
+| **Aksi Aktor**                       | **Reaksi Sistem**                                                                          |
+| Memulai Aplikasi                     | Menampilkan halaman utama                                                                  |
+| 1. Pilih menu lihat absensi mahasisa | 2. Menampilkan halaman absensi mahasiswa via web                                           |
+
+
+
+3.2.2	Class Diagram
+Class Diagram adalah diagram UML yang menggambarkan kelas-kelas dalam sebuah sistem dan hubungannya antara satu dengan yang lain, serta dimasukkan pula atribut dan operasi. Class Diagram pada aplikasi sebagai berikut:
+
+ <p align="center"><img src="../../img/Laporan/UML/class%2520diagram/ClassDiagramMonitoringAbsensiMahasiswa.png" width="500" height="800">
+Gambar 3.9 Class Diagram Sistem Monitoring Absensi Mahasiswa
+
+
+3.2.3	Sequence Diagram
+Sequence Diagram merupakan penggambaran keterhubungan atau interaksi antar objek dalam suatu jangka waktu. Sequence Diagram terutama menampilkan interaksi antara pengguna (user) dengan sistem.
+
+
+3.2.3.1  Sequence Diagram Login Untuk Admin
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramKelolaAbsensi_Admin.png" width="500" height="800"> 
+Gambar 3.10 Sequence Diagram Login untuk Admin
+Keterangan:
+Ketika aktor admin ingin masuk ke halaman utama admin, terlebih dahulu aktor harus login. Proses yang ditempuh yaitu:
+1.	Admin membuka UI login
+2.	Lalu masukan username dan password
+3.	Sistem akan mengoneksikan terlebih dahulu kepada database, jika data yang dimasukan sesuai makan akan masuk ke halaman utama admin.
+
+3.2.3.2  Sequence Diagram Login Untuk Dosen
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramKelolaAbsensi_Dosen.png" width="500" height="800"> 
+Gambar 3.11 Sequence Diagram Login untuk Dosen
+
+Keterangan:
+Ketika aktor admin ingin masuk ke halaman utama dosen, terlebih dahulu aktor harus login terlebih dahulu. Proses yang ditempuh yaitu:
+1.	Admin membuka UI login
+2.	Lalu masukan username dan password
+3.	Sistem akan mengoneksikan terlebih dahulu kepada database, jika data yang dimasukan sesuai makan akan masuk ke halaman utama admin.
+
+3.2.3.3  Sequence Diagram Login Untuk Orangtua
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramLoginOrangtua.png" width="500" height="800"> 
+Gambar 3.12 Sequence Diagram Login untuk Orangtua
+
+Keterangan:
+Ketika aktor orangtua ingin masuk ke halaman utama orangtua, terlebih dahulu aktor harus login terlebih dahulu. Proses yang ditempuh yaitu:
+1.	Orangtua membuka UI login
+2.	Lalu masukan NPM dan password dari anaknya (mahasiswa).
+3.	Sistem akan mengoneksikan terlebih dahulu kepada database, jika data yang dimasukan sesuai maka akan masuk ke halaman utama orangtua.
+
+
+
+3.2.3.4  Sequence Diagram Login Untuk Mahasiswa
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramLoginMahasiswa.png" width="500" height="800"> 
+Gambar 3.13 Sequence Diagram Login untuk Mahasiswa
+Keterangan:
+Ketika aktor mahasiswa ingin masuk ke halaman utama mahasiswa, terlebih dahulu aktor harus login terlebih dahulu. Proses yang ditempuh yaitu:
+1.	Mahasiswa membuka UI login
+2.	Lalu masukan NPM dan password mahasiswa
+3.	Sistem akan mengoneksikan terlebih dahulu kepada database, jika data yang dimasukan sesuai maka akan masuk ke halaman utama mahasiswa.
+
+3.2.3.5  Sequence Diagram Kelola Absensi untuk Admin
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramKelolaAbsensi_Admin.png" width="500" height="800"> 
+Gambar 3.14 Sequence Diagram Kelola Absensi untuk Admin
+Keterangan:
+1.	Admin membuka halaman utaman dan memilih masuk ke menu absensi. Dimana data absensi tersebut diambil dari data master absensi mahasiswa meliputi data matakuliah, dosen, mahasiswa, ruangan, kelas, jadwal.
+2.	Sebelum melakukan input absensi, admin harus memasukan terlebih dahulu kelas dan matakuliahnya. Seletah itu, admin bisa melakukan tambah, edit, simpan, hapus data absensi dengan eksekusi query dalam controller absensi.
+
+3.2.3.6  Sequence Diagram Kelola Absensi untuk Dosen
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramKelolaAbsensi_Dosen.png" width="500" height="800"> 
+Gambar 3.15 Sequence Diagram Kelola Absensi untuk Dosen
+Keterangan:
+1.	Dosen membuka halaman utaman dan memilih masuk ke menu absensi. Dimana data absensi tersebut diambil dari data master absensi mahasiswa meliputi data matakuliah, dosen, mahasiswa, ruangan, kelas, jadwal.
+2.	Sebelum melakukan input absensi, dosen harus memasukan terlebih dahulu kelas dan matakuliahnya. Seletah itu, dosen bisa melakukan tambah, edit, simpan data absensi dengan eksekusi query dalam controller absensi.
+
+3.2.3.7  Sequence Diagram Kelola Absensi Rekap Absensi
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramRekapAbsensi.png" width="500" height="800"> 
+Gambar 3.16 Sequence Diagram Kelola Rekap Absensi
+
+Keterangan:
+Dosen membuka halaman utaman dan memilih masuk ke sub menu rekap absensi yang terdapat dalam menu absensi. Dimana data rekap absensi tersebut diambil dari data absensi.
+
+
+3.2.3.8  Sequence Diagram Monitoring Absensi via sms
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramMonitoringAbsensiViaSMS.png" width="500" height="800"> 
+Gambar 3.17 Sequence Diagram Monitoring Absensi via SMS
+Keterangan:
+1.	Admin membuka halaman utama dan memilih masuk ke menu absensi dan melihat pelanggaran yang ada. 
+2.	Kemudian admin mengirimkan sms yang ditujukan ke no orang tua mahasiswa untuk megirikan pemberitahuan atau informasi bahwa anaknya mendapatkan SP1, SP2 atau SP3. 
+
+3.2.3.8  Sequence Diagram Monitoring Absensi via Web
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramMonitoringAbsensiMahasiswaViaWeb.png" width="500" height="800"> 
+Gambar 3.18 Sequence Diagram Monitoring Absensi via Web Mahasiswa
+
+<p align="center"><img src="../../img/Laporan/UML/sequence%2520diagram/SequenceDiagramMonitoringAbsensiMahasiswaViaWeb-orangtua.png" width="500" height="800">  
+Gambar 3.19 Sequence Diagram Monitoring Absensi via Web Orangtua
+Keterangan:
+Mahasiswa dan orangtua bisa melihat kehadiran mahasiswa dengan mengakses web absensi mahasiswa. Dimana mahasiswa dan orangtua sudah diberikan akun untuk mengaksesnya berupa npm dan password.
+
+3.2.4   Communication Diagram
+3.2.4.1  Communication Diagram Login
+<p align="center"><img src="../../img/Laporan/UML/collaboration%2520diagram/CommunicationDiagramLogin.png" width="500" height="800">  
+Gambar 3.20 Communication Diagram Login
+
+3.2.4.2  Communication Diagram Kelola Absensi
+<p align="center"><img src="../../img/Laporan/UML/collaboration%2520diagram/CommunicationDiagramKelolaAbsensi.png" width="500" height="800"> 
+Gambar 3.21 Communication Diagram Kelola Absensi
+
+3.2.4.3  Communication Diagram Rekap Absensi 
+<p align="center"><img src="../../img/Laporan/UML/collaboration%2520diagram/CommunicationDiagramRekapAbsensi.png" width="500" height="800"> 
+Gambar 3.22 Communication Diagram Kelola Rekap Absensi
+
+3.2.4.4  Communication Diagram Kelola Monitoring Absensi via SMS
+<p align="center"><img src="../../img/Laporan/UML/collaboration%2520diagram/CommunicationDiagramMonitoringAbsensiViaSMS.png" width="500" height="800"> 
+Gambar 3.23 Communication Diagram Kelola Monitoring Absensi via SMS
+
+3.2.4.5  Communication Diagram Diagram Kelola Monitoring Absensi via Web
+<p align="center"><img src="../../img/Laporan/UML/collaboration%2520diagram/CommunicationDiagramMonitoringAbsensiMahasiswaViaWeb.png" width="500" height="800"> 
+Gambar 3.24 Communication Diagram Kelola Monitoring Absensi via Web
+
+3.2.5   Activity Diagram
+Berikut ini digambarkan activity diagram yang memperlihatkan alur jalannya Sistem Monitoring Absensi Mahasiswa DIV Teknik Informatika Politeknik Pos Indonesia: 
+
+3.2.5.1  Activity Diagram Login
+<p align="center"><img src="../../img/Laporan/UML/activity%2520diagram/ActivityDiagramLogin.png" width="500" height="800"> 
+Gambar 3.25 Activity Diagram Login
+Keterangan:
+Untuk mengakses sistem absensi mahasiswa terlebih dahulu aktor harus login dengan memasukan username dan password lalu klik tombol login di UI Login lalu sistem akan memvalidasi inputan yang dimasukan aktor dan dihubungkan dengna level koneksi. Jika data sesuai, maka akan diteruskan ke halaman utama sistem absensi mahasiswa diantaranya halaman utama admin dan halaman utama dosen dan halaman utama mahasiswa atau orang tua sesuai dengan level hak akses.
+
+
+3.2.5.2  Activity Diagram Kelola Absensi
+<p align="center"><img src="../../img/Laporan/UML/activity%2520diagram/ActivityDiagramKelolaAbsensi.png" width="500" height="800">
+Gambar 3.26 Activity Diagram Kelola Absensi
+Keterangan:
+Setelah dosen berhasil login, ketika ingin menambahkan, edit atau hapus data dosen maka aktivitas yang dilakukan yaitu pertama pilih menu absensi dan pilih sub menu absensi lalu masukan data absensi sesuai dengan keadaan mahasiswa klik simpan. Maka sistem akan menampilkan data yang berhasil tersimpan. Jika ada kesalahan maka klik ubah untuk mengoreksi atau klik hapus untuk menghapus data yang ada khusus untuk admin.
+
+
+3.2.5.3  Activity Diagram Kelola Rekap Absensi
+<p align="center"><img src="../../img/Laporan/UML/activity%2520diagram/ActivityDiagramKelolaRekapAbsensi.png" width="500" height="800"> 
+Gambar 3.27 Activity Diagram Kelola Rekap Absensi
+Keterangan:
+Setelah admin berhasil login, maka admin diberikan izin untuk melihat rekapan absensi yang merupakan kumpulan dari absensi yang diinputkan dosen ketika masuk untuk mengajar kepada mahasiswa. Dimana dalam rekap absensi jumlah dari keterangan kehadiran seperti sakit, ijin, alfa dan hadir akan dikalkulasikan. 
+
+3.2.5.4  Activity Diagram Kelola Monitoring Absensi Mahasiswa via SMS
+<p align="center"><img src="../../img/Laporan/UML/activity%2520diagram/ActivityDiagramKelolaMonitoringAbsensiMahasiswaViaSMS.png" width="500" height="800"> 
+Gambar 3.28 Activity Diagram Kelola Monitoring Absensi via SMS
+
+
+Keterangan:
+Setelah admin berhasil login, proses kirim sms ini dilakukan ketika admin menerima info tentang pelanggaran seperti SP1, SP2, SP3 dari menu rekap absensi. Ketika ada mahasiswa yang mendapatkan pelanggaran di atas, admin mengirimkan sms pemberitahuan kepada orangtua yaitu dengan dimasukannya no hp orang tua dan isi pesan bahwa anaknya telah mendapatkan pelanggaran tersebut.
+
+3.2.5.5  Activity Diagram Kelola Monitoring Absensi Mahasiswa via Web
+<p align="center"><img src="../../img/Laporan/UML/activity%2520diagram/ActivityDiagramKelolaMonitoringAbsensiMahasiswaViaWeb.png" width="500" height="800"> 
+Gambar 3.29 Activity Diagram Kelola Monitoring Absensi Mahasiswa via Web
+
+Keterangan:
+Sebenarnya untuk melihat absensi ini semua aktor bisa melihat absensi, tetapi yang ditekankan dalam memonitoring absensi mahasiswa ini jadi orangtua dan mahasiswa bisa mengetahui absensinya melalui web ini dengan syarat mahasiswa atau orang tua harus login terlebih dahulu dengan memasukan NPM dan passwordnya. 
+
+
+
+3.2.6   Statechart Diagram
+3.2.6.1   Statechart Diagram Login
+<p align="center"><img src="../../img/Laporan/UML/statechart%2520diagram/StatechartDiagramLogin.png" width="500" height="800"> 
+Gambar 3.30 Statechart Diagram Login
+Keterangan:
+Untuk mengakses sistem monitoring absensi mahasiswa terlebih dahulu aktor harus login terlebih dahulu dengan memasukan username dan password lalu klik tombol login di UI Login lalu sistem akan memvalidasi inputan yang dimasukan aktor dan dihubungkan dengna level koneksi. Jika data sesuai, maka akan diteruskan ke halaman utama sistem monitoring absensi mahasiswa diantaranya halaman utama admin dan halaman utama dosen dan halaman utama orangtua/mahasiswa sesuai dengan level hak akses.
+3.2.6.2   Statechart Diagram Kelola Absensi
+ 
+Gambar 3.31 Statechart Diagram Kelola Absensi
+<p align="center"><img src="../../img/Laporan/UML/statechart%2520diagram/StatechartDiagramKelolaAbsensi.png" width="500" height="800">
+Keterangan:
+Setelah admin berhasil login, ketika ingin menambahkan, edit atau hapus data absensi maka aktivitas yang dilakukan yaitu pertama pilih menu absensi lalu pilih inputkan absensi mahasiswa sesuai dengan realita lalu klik simpan. Maka sistem akan menampilkan data yang berhasil tersimpan. Jika ada kesalahan maka klik ubah untuk mengoreksi atau klik hapus untuk menghapus data yang ada.
+
+
+3.2.6.3   Statechart Diagram Kelola Rekap Absensi
+<p align="center"><img src="../../img/Laporan/UML/statechart%2520diagram/StatechartDiagramKelolaRekapAbsensi.png" width="500" height="800"> 
+Gambar 3.32 Statechart Diagram Kelola Rekap Absensi
+Keterangan:
+Setelah admin berhasil login, maka admin diberikan izin untuk melihat rekapan absensi yang merupakan kumpulan dari absensi yang diinputkan dosen ketika masuk untuk mengajar kepada mahasiswa. Dimana dalam rekap absensi jumlah dari keterangan kehadiran seperti sakit, ijin, alfa dan hadir akan dikalkulasikan. 
+
+
+3.2.6.4   Statechart Diagram Monitoring Absensi Mahasiswa via SMS
+ <p align="center"><img src="../../img/Laporan/UML/statechart%2520diagram/StatechartDiagramKelolaMonitoringAbsensiMahasiswaviaSMS.png" width="500" height="800">
+Gambar 3.33 Statechart Diagram Monitoring Absensi via SMS
+
+Keterangan:
+Setelah admin berhasil login, proses kirim sms ini dilakukan ketika admin menerima info tentang pelanggaran seperti SP1, SP2, SP3 dari menu rekap absensi. Ketika ada mahasiswa yang mendapatkan pelanggaran di atas, admin mengirimkan sms pemberitahuan kepada orangtua yaitu dengan dimasukannya no hp orang tua dan isi pesan bahwa anaknya telah mendapatkan pelanggaran tersebut.
+
+
+3.2.6.5   Statechart Diagram Monitoring Absensi Mahasiswa via Web
+ <p align="center"><img src="../../img/Laporan/UML/statechart%2520diagram/StatechartDiagramKelolaMonitoringAbsensiMahasiswaViaWeb.png" width="500" height="800">
+Gambar 3.34 Statechart Diagram Monitoring Absensi via Web
+
+Keterangan:
+Sebenarnya untuk melihat absensi ini semua aktor bisa melihat absensi, tetapi yang ditekankan dalam memonitoring absensi mahasiswa ini jadi orangtua dan mahasiswa bisa mengetahui absensinya melalui web ini dengan syarat mahasiswa atau orang tua harus login terlebih dahulu dengan memasukan NPM dan passwordnya. 
+
+3.2.7   Component Diagram
+<p align="center"><img src="../../img/Laporan/UML/component%2520diagram/ComponentDiagramMonitoringAbsensiMahasiswa.png" width="500" height="800"> 
+Gambar 3.35 Component Diagram Sistem Monitoring Absensi Mahasiswa
+Keterangan:
+Gambar 3.35 menunjukan gambaran sebuah komponen dalam system dimana:
+1.	Aktor menghadapi UI login dan melakukan login.
+2.	Masuk ke halaman utama.
+3.	Kemudian masuk ke dalam system
+4.	Sistem tersebut terdiri dari beberapa komponen yaitu data master untuk absensi seperti ruangan, kelas, matakuliah, mahasiswa, dosen dll. Selain itu juga terdapat komponen seperti absensi, rekap absensi, pengiriman SMS dan view absensi. 
+5.	Sistem terhubung dengan sebuah komponen database yang bernama db_absensi_mahasiswa.
+6.	Adapun untuk pembuatan systemnya menggunakan framework CodeIgniter dan untuk sms gatewaynya menggunakan service gammu.
+
+3.2.8   Deployment Diagram
+3.2.8.1	Deployment Diagram Software
+<p align="center"><img src="../../img/Laporan/UML/deployment%2520diagram/DeploymentDiagramSoftware.png" width="500" height="800"> 
+Gambar 3.36 Deployment Diagram Software
+
+3.2.8.2	Deployment Diagram Hardware
+<p align="center"><img src="../../img/Laporan/UML/deployment%2520diagram/DeploymentDiagramHardware.png" width="500" height="800"> 
+Gambar 3.37 Deployment Diagram Hardware
+
+3.2.9	Struktur Menu
+<p align="center"><img src="../../img/Laporan/struktur%20menu.JPG" width="500" height="800"> 
+Gambar 3.38 Struktur Menu Sistem Monitoring Absensi Mahasiswa
+
+
+3.2.10 Perancangan Antarmuka
+<p align="center"><img src="../../img/Laporan/perancangan%2520menu/formlogin.jpg" width="500" height="800">  
+Gambar 3.39 UI Login
+Keterangan:
+Gambar 3.39 adalah perancangan antar muka untuk login dengan parameter inputan berupa username dan password yang diperuntukan oleh administrator dan dosen, sedangkan untuk orangtua dan mahasiswa inputannya yaitu NPM dan password agar bisa mengelola absensi mahasiswa.
+
+<p align="center"><img src="../../img/Laporan/perancangan%2520menu/Home.jpg" width="500" height="800">  
+Gambar 3.40 UI Halaman Utama Admin
+Keterangan:
+Pada gambar 3.40 menggambarkan tentang Perancangan Antarmuka Halaman Utama Administrator. Dimana terdapat menu-menu navigasi diantaranya beranda, data master, absensi, layanan SMS, jadwal dan alat. 
+
+<p align="center"><img src="../../img/Laporan/perancangan%2520menu/Untitled.jpg" width="500" height="800"> 
+Gambar 3.41 UI Kelola data Absensi, Rekap Absensi dan View Data Kotak Masuk, Kotak Keluar
+Keterangan:
+Gambar tersebut merupakan perancangan interface dari view data untuk data absensi, rekap absensi dan view data kotak masuk, kotak keluar.
+
+<p align="center"><img src="../../img/Laporan/perancangan%2520menu/inpu.jpg" width="500" height="800">  
+Gambar 3.42 UI Form  Input Data
+Keterangan:
+Gambar tersebut merupakan perancangan interface dari layanan sms berupa kirim sms atau pesan.
+
+<p align="center"><img src="../../img/Laporan/perancangan%2520menu/utama%20dosen.jpg" width="500" height="800">  
+Gambar 3.43 UI Halaman Utama Dosen
+Keterangan: 
+Pada gambar 3.43 menggambarkan tentang Perancangan Antarmuka Halaman Utama Dosen. Dimana terdapat menu-menu navigasi diantaranya beranda dan absensi. 
+
+<p align="center"><img src="../../img/Laporan/perancangan%2520menu/utama%20mhs.jpg" width="500" height="800">  
+Gambar 3.44 UI Halaman Utama Orangtua dan Mahasiswa
+Keterangan: 
+Pada gambar 3.44 menggambarkan tentang Perancangan Antarmuka Halaman Utama Orangtua dan Mahasiswa. Dimana terdapat menu-menu diantaranya beranda dan view absensi. 
+
 </p>
+
+
+
+
+
+
+
+
+
