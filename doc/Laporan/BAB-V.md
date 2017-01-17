@@ -3,7 +3,6 @@ KESIMPULAN DAN SARAN</h2>
 <br>
 <p align="justify">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implementasi merupakan sistem atau aplikasi yang dibuat dengan merinci komponen-komponen pendukung berupa program, lingkungan implementasi, tampilan antarmuka, dan petunjuk pemakaian.<br>
 
 <strong>5.1  Kesimpulan</strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan paparan pada bab-bab sebelumnya, maka peneliti dapat mengambil kesimpulan dari Sistem Monitoring Absensi Mahasiswa Diploma IV Teknik Informatika  di Politeknik Pos Indonesia dengan Sub Modul Monitoring Absensi Mahasiswa, yaitu sebagai berikut:<br>
