@@ -33,44 +33,44 @@ No.	Jenis	 	Keterangan<br>
 <br>
 4.2.1	Form Login<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untuk menggunakan aplikasi ini, user/admin harus login terlebih dahulu dengan memasukkan username dan password pada form Login dibawah ini. Hak akses user terbagi menjadi 3 level, yaitu administrator yang merupakan Petugas BAAK, dosen untuk menginputkan absensi dan mahasiswa atau orangtua untuk melihat atau memonitoring absensi. Untuk login hanya mengklik button Login.<br>
- <p align="center"><img src="../../img/Laporan/login.JPG" width="800" height="500">
+ <p align="center"><img src="../../img/Laporan/login.JPG" width="800" height="500"><br>
  Gambar 4. 1 Form Login<br></p>
 <br>
 4.2.2	Form Kelola Absensi<br>
 <p align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berikut adalah kelola absensi untuk system absensi mahasiswa, dimana dosen yang menginputkan absensi tersebut sesuai dengan keadaan para mahasiswa, dosen hanya disediakan radiobutton untuk memilih salah satu apakah mahasiswa hadir, sakit, ijin atau alfa, kemudian klik save untuk menyimpannya. Adapun untuk kelola absensi ini tidak hanya input absensi saja, tetapi termasuk dengan data-data master yang digunakan untuk keperluan input absensi.<br>
- <p align="center"><img src="../../img/Laporan/input%20absensi.JPG" width="800" height="500">
+ <p align="center"><img src="../../img/Laporan/input%20absensi.JPG" width="800" height="500"><br>
  Gambar 4.2 Form Kelola Absensi<br></p>
 
 <br>
 4.2.3	Form Kelola Rekap Absensi<br>
- <p align="center"><img src="../../img/Laporan/rekap.JPG" width="800" height="500"> 
+ <p align="center"><img src="../../img/Laporan/rekap.JPG" width="800" height="500"><br> 
  Gambar 4.3 Form Kelola Rekap Absensi<br></p>
  <p align="justify">
 Keterangan:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gambar 4.3 merupakan rekap absensi dimana form tersebut difasilitasi searching, berdasarkan kelas, kemudian akan muncul data yang dibutuhkan. Button bersihkan pencarian berguna untuk mengembalikan view data sebelum melakukan pencarian. Adapun rekap absensi ini berisi data data rekapan dari absensi yang telah diinputkan dosen sebelumnya, selain itu di menu  rekap absensi ini akan dimunculkan info pelanggaran kehadiran seperti SP1, SP2, dan SP3 di menu pelanggaran. <br>
 
 4.2.4	Form Monitoring Absensi Mahasiswa via SMS<br>
-  <p align="center"><img src="../../img/Laporan/kirim%20pesan.jpg" width="800" height="500"> 
+  <p align="center"><img src="../../img/Laporan/kirim%20pesan.jpg" width="800" height="500"> <br>
   Gambar 4.4 Form Layanan SMS Kirim Pesan<br></p>
 
- <p align="center"><img src="../../img/Laporan/kotak%20masuk.JPG" width="800" height="500">  
+ <p align="center"><img src="../../img/Laporan/kotak%20masuk.JPG" width="800" height="500">  <br>
 Gambar 4.5 Form Layanan SMS Kotak Masuk<br></p>
 
- <p align="center"><img src="../../img/Laporan/kotak%20keluar.JPG" width="800" height="500">  
+ <p align="center"><img src="../../img/Laporan/kotak%20keluar.JPG" width="800" height="500">  <br>
 Gambar 4.6 Form Layanan SMS Kotak Keluar<br></p>
 
- <p align="center"><img src="../../img/Laporan/log%20inbox.JPG" width="800" height="500">  
+ <p align="center"><img src="../../img/Laporan/log%20inbox.JPG" width="800" height="500">  <br>
 Gambar 4.7 Form Layanan SMS Log Kotak Masuk<br></p>
 
- <p align="center"><img src="../../img/Laporan/log%20outbox.JPG" width="800" height="500">  
+ <p align="center"><img src="../../img/Laporan/log%20outbox.JPG" width="800" height="500">  <br>
 Gambar 4.8 Form Layanan SMS Log Kotak Keluar<br></p>
 
 Keterangan:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gambar 4.4, 4.5, 4.6, dan 4.7, 4.8 merupakan Form untuk memonitoring Absensi Mahasiswa melalui SMS. Pada layanan sms yang disediakan oleh aplikasi ini berupa kirim pesan untuk mengirim sms, kotak masuk untuk mengelola sms yang masuk ke dalam sistem monitoring absensi, dan kotak keluar untuk mengecek sms apa saja yang berhasil terkirim. Selain itu dalam layanan sms ini disediakan log sms seperti riwayat sms, kapan mengirim sms, kapan menerima sms. <br> 
 
 4.2.5	Form  Monitoring Absensi Mahasiswa via Web<br>
-  <p align="center"><img src="../../img/Laporan/rekap.JPG" width="800" height="500"> 
+  <p align="center"><img src="../../img/Laporan/rekap.JPG" width="800" height="500"> <br>
   Gambar 4.8 Form Halaman Utama  Orangtua dan Mahasiswa<br></p>
   <p align="justify">
 Keterangan:<br>
